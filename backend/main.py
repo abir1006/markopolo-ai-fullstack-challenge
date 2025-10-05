@@ -82,28 +82,28 @@ def generate_timing():
 def generate_message_content(channel: str, audience: str):
     messages = {
         "email": [
-            f"🎯 Exclusive offer for {audience.lower()}! 20% off your next purchase",
+            f"Exclusive offer for {audience.lower()}! 20% off your next purchase",
             f"We miss you! Come back and save 15% on your favorite items",
-            f"⏰ Limited time: Flash sale just for you!",
+            f"Limited time: Flash sale just for you!",
             f"Your cart is waiting... Complete your purchase with free shipping"
         ],
         "sms": [
-            f"🔥 FLASH SALE: 25% off ends tonight! Use code SAVE25",
+            f"FLASH SALE: 25% off ends tonight! Use code SAVE25",
             f"Hi! Your favorite item is back in stock. Get it now!",
             f"⚡ 2 HOURS LEFT: Don't miss our biggest sale of the year",
             f"FREE shipping today only. Complete your order now!"
         ],
         "push": [
-            f"💡 Personalized recommendation ready for you!",
-            f"🛍️ Items in your wishlist are on sale now",
-            f"⭐ New arrivals matching your style preferences",
-            f"🎁 Special reward unlocked! Tap to claim"
+            f"Personalized recommendation ready for you!",
+            f"Items in your wishlist are on sale now",
+            f"New arrivals matching your style preferences",
+            f"Special reward unlocked! Tap to claim"
         ],
         "whatsapp": [
             f"Hi! We noticed you were browsing. Need help finding something?",
-            f"🎉 Great news! Your favorite brand just launched new items",
-            f"💬 Quick question: How was your recent purchase experience?",
-            f"🛒 Your cart expires soon. Secure your items now!"
+            f"Great news! Your favorite brand just launched new items",
+            f"Quick question: How was your recent purchase experience?",
+            f"our cart expires soon. Secure your items now!"
         ]
     }
     return random.choice(messages.get(channel, ["Generic marketing message"]))
